@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAA20DAF-B47B-47AD-8FB0-CE59FBBF57CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnityExplorer</RootNamespace>
+    <AssemblyName>UnityExplorer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>Latest</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'CPP|AnyCPU'">
+    <OutputPath>bin\CPP\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Iced">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\Iced.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppGen.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\Il2CppGen.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="mcs">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\mcs.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tomlet">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\Tomlet.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WorldLoader\UnhollowedAsm\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WL">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRChat\WL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheObject\CacheConfigEntry.cs" />
+    <Compile Include="CacheObject\CacheConstructor.cs" />
+    <Compile Include="CacheObject\CacheField.cs" />
+    <Compile Include="CacheObject\CacheKeyValuePair.cs" />
+    <Compile Include="CacheObject\CacheListEntry.cs" />
+    <Compile Include="CacheObject\CacheMember.cs" />
+    <Compile Include="CacheObject\CacheMemberFactory.cs" />
+    <Compile Include="CacheObject\CacheMethod.cs" />
+    <Compile Include="CacheObject\CacheObjectBase.cs" />
+    <Compile Include="CacheObject\CacheProperty.cs" />
+    <Compile Include="CacheObject\ICacheObjectController.cs" />
+    <Compile Include="CacheObject\IValues\InteractiveColor.cs" />
+    <Compile Include="CacheObject\IValues\InteractiveDictionary.cs" />
+    <Compile Include="CacheObject\IValues\InteractiveEnum.cs" />
+    <Compile Include="CacheObject\IValues\InteractiveList.cs" />
+    <Compile Include="CacheObject\IValues\InteractiveString.cs" />
+    <Compile Include="CacheObject\IValues\InteractiveValue.cs" />
+    <Compile Include="CacheObject\IValues\InteractiveValueStruct.cs" />
+    <Compile Include="CacheObject\Views\CacheConfigCell.cs" />
+    <Compile Include="CacheObject\Views\CacheKeyValuePairCell.cs" />
+    <Compile Include="CacheObject\Views\CacheListEntryCell.cs" />
+    <Compile Include="CacheObject\Views\CacheMemberCell.cs" />
+    <Compile Include="CacheObject\Views\CacheObjectCell.cs" />
+    <Compile Include="Config\ConfigElement.cs" />
+    <Compile Include="Config\ConfigHandler.cs" />
+    <Compile Include="Config\ConfigManager.cs" />
+    <Compile Include="Config\IConfigElement.cs" />
+    <Compile Include="Config\InternalConfigHandler.cs" />
+    <Compile Include="CSConsole\ConsoleController.cs" />
+    <Compile Include="CSConsole\CSAutoCompleter.cs" />
+    <Compile Include="CSConsole\LexerBuilder.cs" />
+    <Compile Include="CSConsole\Lexers\CommentLexer.cs" />
+    <Compile Include="CSConsole\Lexers\KeywordLexer.cs" />
+    <Compile Include="CSConsole\Lexers\Lexer.cs" />
+    <Compile Include="CSConsole\Lexers\NumberLexer.cs" />
+    <Compile Include="CSConsole\Lexers\StringLexer.cs" />
+    <Compile Include="CSConsole\Lexers\SymbolLexer.cs" />
+    <Compile Include="CSConsole\ScriptEvaluator.cs" />
+    <Compile Include="CSConsole\ScriptInteraction.cs" />
+    <Compile Include="ExplorerBehaviour.cs" />
+    <Compile Include="ExplorerCore.cs" />
+    <Compile Include="Hooks\AddHookCell.cs" />
+    <Compile Include="Hooks\HookCell.cs" />
+    <Compile Include="Hooks\HookCreator.cs" />
+    <Compile Include="Hooks\HookInstance.cs" />
+    <Compile Include="Hooks\HookList.cs" />
+    <Compile Include="Inspectors\GameObjectInspector.cs" />
+    <Compile Include="Inspectors\InspectorBase.cs" />
+    <Compile Include="Inspectors\InspectorManager.cs" />
+    <Compile Include="Inspectors\InspectorTab.cs" />
+    <Compile Include="Inspectors\MouseInspector.cs" />
+    <Compile Include="Inspectors\MouseInspectors\MouseInspectorBase.cs" />
+    <Compile Include="Inspectors\MouseInspectors\UiInspector.cs" />
+    <Compile Include="Inspectors\MouseInspectors\WorldInspector.cs" />
+    <Compile Include="Inspectors\ReflectionInspector.cs" />
+    <Compile Include="Loader\IExplorerLoader.cs" />
+    <Compile Include="Loader\WL\StandaloneConfigHandler.cs" />
+    <Compile Include="Loader\WL\WLMod.cs" />
+    <Compile Include="ObjectExplorer\ObjectSearch.cs" />
+    <Compile Include="ObjectExplorer\SceneExplorer.cs" />
+    <Compile Include="ObjectExplorer\SceneHandler.cs" />
+    <Compile Include="ObjectExplorer\SearchProvider.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runtime\Il2CppHelper.cs" />
+    <Compile Include="Runtime\MonoHelper.cs" />
+    <Compile Include="Runtime\UERuntimeHelper.cs" />
+    <Compile Include="Runtime\UnityCrashPrevention.cs" />
+    <Compile Include="Tests\TestClass.cs" />
+    <Compile Include="UI\DisplayManager.cs" />
+    <Compile Include="UI\ExplorerUIBase.cs" />
+    <Compile Include="UI\Notification.cs" />
+    <Compile Include="UI\Panels\AutoCompleteModal.cs" />
+    <Compile Include="UI\Panels\ClipboardPanel.cs" />
+    <Compile Include="UI\Panels\CSConsolePanel.cs" />
+    <Compile Include="UI\Panels\FreeCamPanel.cs" />
+    <Compile Include="UI\Panels\HookManagerPanel.cs" />
+    <Compile Include="UI\Panels\InspectorPanel.cs" />
+    <Compile Include="UI\Panels\LogPanel.cs" />
+    <Compile Include="UI\Panels\MouseInspectorResultsPanel.cs" />
+    <Compile Include="UI\Panels\ObjectExplorerPanel.cs" />
+    <Compile Include="UI\Panels\OptionsPanel.cs" />
+    <Compile Include="UI\Panels\UEPanel.cs" />
+    <Compile Include="UI\Panels\UEPanelDragger.cs" />
+    <Compile Include="UI\UEPanelManager.cs" />
+    <Compile Include="UI\UIManager.cs" />
+    <Compile Include="UI\Widgets\AutoComplete\EnumCompleter.cs" />
+    <Compile Include="UI\Widgets\AutoComplete\ISuggestionProvider.cs" />
+    <Compile Include="UI\Widgets\AutoComplete\Suggestion.cs" />
+    <Compile Include="UI\Widgets\AutoComplete\TypeCompleter.cs" />
+    <Compile Include="UI\Widgets\EvaluateWidget\BaseArgumentHandler.cs" />
+    <Compile Include="UI\Widgets\EvaluateWidget\EvaluateWidget.cs" />
+    <Compile Include="UI\Widgets\EvaluateWidget\GenericArgumentHandler.cs" />
+    <Compile Include="UI\Widgets\EvaluateWidget\GenericConstructorWidget.cs" />
+    <Compile Include="UI\Widgets\EvaluateWidget\ParameterHandler.cs" />
+    <Compile Include="UI\Widgets\GameObjects\AxisControl.cs" />
+    <Compile Include="UI\Widgets\GameObjects\ComponentCell.cs" />
+    <Compile Include="UI\Widgets\GameObjects\ComponentList.cs" />
+    <Compile Include="UI\Widgets\GameObjects\GameObjectControls.cs" />
+    <Compile Include="UI\Widgets\GameObjects\GameObjectInfoPanel.cs" />
+    <Compile Include="UI\Widgets\GameObjects\TransformControls.cs" />
+    <Compile Include="UI\Widgets\GameObjects\TransformType.cs" />
+    <Compile Include="UI\Widgets\GameObjects\Vector3Control.cs" />
+    <Compile Include="UI\Widgets\TimeScaleWidget.cs" />
+    <Compile Include="UI\Widgets\UnityObjects\AudioClipWidget.cs" />
+    <Compile Include="UI\Widgets\UnityObjects\MaterialWidget.cs" />
+    <Compile Include="UI\Widgets\UnityObjects\Texture2DWidget.cs" />
+    <Compile Include="UI\Widgets\UnityObjects\UnityObjectWidget.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\UnityExplorer.csproj.AssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniverseLib\UniverseLib.csproj">
+      <Project>{b0c46f6f-b11d-4941-bb36-f249c85402e2}</Project>
+      <Name>UniverseLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetPath)" "C:\Program Files (x86)\Steam\steamapps\common\VRChat\Mods" /Y /I</PostBuildEvent>
+  </PropertyGroup>
+</Project>
