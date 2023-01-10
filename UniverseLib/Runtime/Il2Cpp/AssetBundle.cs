@@ -6,11 +6,11 @@ using System.Text;
 using UnityEngine;
 using UniverseLib.Runtime.Il2Cpp;
 #if DEBUG
-using Il2CppGen.Runtime;
-using Il2CppGen.Runtime.Attributes;
-using Il2CppGen.Runtime.Injection;
-using Il2CppGen.Runtime.InteropTypes.Arrays;
-using IL2CPPType = Il2CppGen.Runtime.Il2CppType;
+using Il2CppInterop.Runtime;
+using Il2CppInterop.Runtime.Attributes;
+using Il2CppInterop.Runtime.Injection;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
+using IL2CPPType = Il2CppInterop.Runtime.Il2CppType;
 #else
 using UnhollowerRuntimeLib;
 using UnhollowerBaseLib;

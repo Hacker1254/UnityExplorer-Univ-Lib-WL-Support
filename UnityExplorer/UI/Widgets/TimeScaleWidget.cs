@@ -5,7 +5,7 @@ using UniverseLib.UI.Models;
 using IL2CPPUtils = UnhollowerBaseLib.UnhollowerUtils;
 #endif
 #if DEBUG
-using IL2CPPUtils = WorldLoader.Il2CppGen.Internal.Il2CppGenUtils;
+using IL2CPPUtils = Il2CppInterop.Internal.Il2CppInteropUtils;
 #endif
 
 namespace UnityExplorer.UI.Widgets

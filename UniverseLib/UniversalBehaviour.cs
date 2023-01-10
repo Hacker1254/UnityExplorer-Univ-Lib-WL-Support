@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 #if DEBUG
-using Il2CppGen.Runtime.Injection;
+using Il2CppInterop.Runtime.Injection;
 #endif
 #if UNHOLLOWER
 using UnhollowerRuntimeLib;

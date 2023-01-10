@@ -10,8 +10,8 @@ using ArgumentNullException = System.ArgumentNullException;
 using NotSupportedException = System.NotSupportedException;
 using Il2CppIEnumerator = Il2CppSystem.Collections.IEnumerator;
 #if DEBUG
-using Il2CppGen.Runtime.Injection;
-using Il2CppGen.Runtime;
+using Il2CppInterop.Runtime.Injection;
+using Il2CppInterop.Runtime;
 #else
 using UnhollowerBaseLib;
 using UnhollowerRuntimeLib;

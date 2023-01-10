@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 #if DEBUG
-using Il2CppGen.Runtime.InteropTypes.Arrays;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
 #else
 using UnhollowerBaseLib;
 #endif

@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.InteropServices;
 #if DEBUG
-using Il2CppGen.Runtime;
+using Il2CppInterop.Runtime;
 #else
 using UnhollowerBaseLib;
 #endif

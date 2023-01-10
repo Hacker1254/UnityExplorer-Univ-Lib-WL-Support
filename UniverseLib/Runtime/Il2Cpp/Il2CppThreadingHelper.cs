@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 #if DEBUG
-using Il2CppGen.Runtime;
+using Il2CppInterop.Runtime;
 #else
 using UnhollowerBaseLib;
 using UnhollowerRuntimeLib;

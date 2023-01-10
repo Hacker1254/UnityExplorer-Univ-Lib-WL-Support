@@ -5,7 +5,7 @@ using UniverseLib.UI.Models;
 using UnhollowerRuntimeLib;
 #endif
 #if DEBUG
-using Il2CppGen.Runtime.Injection;
+using Il2CppInterop.Runtime.Injection;
 #endif
 
 namespace UnityExplorer.UI.Panels

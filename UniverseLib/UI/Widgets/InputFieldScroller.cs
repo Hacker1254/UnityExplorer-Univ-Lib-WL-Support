@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UniverseLib.UI.Models;
 #if DEBUG
-using Il2CppGen.Runtime;
+using Il2CppInterop.Runtime;
 #endif
 #if UNHOLLOWER
 using UnhollowerRuntimeLib;

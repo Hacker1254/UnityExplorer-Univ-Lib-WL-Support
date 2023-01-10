@@ -11,8 +11,8 @@ using UniverseLib.Input;
 using UniverseLib.Runtime;
 using UniverseLib.UI;
 #if DEBUG
-using Il2CppGen.Runtime;
-using IL2CPPUtils = WorldLoader.Il2CppGen.Internal.Il2CppGenUtils;
+using Il2CppInterop.Runtime;
+using IL2CPPUtils = Il2CppInterop.Internal.Il2CppInteropUtils;
 #endif
 #if UNHOLLOWER
 using UnhollowerBaseLib;

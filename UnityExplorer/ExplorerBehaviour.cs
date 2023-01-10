@@ -3,7 +3,7 @@
 #if UNHOLLOWER
 using UnhollowerRuntimeLib;
 #else
-using Il2CppGen.Runtime.Injection;
+using Il2CppInterop.Runtime.Injection;
 #endif
 #endif
 

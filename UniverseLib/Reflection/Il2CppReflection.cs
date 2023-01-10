@@ -20,11 +20,12 @@ using UniverseLib.Reflection;
 using System.Diagnostics;
 using UniverseLib.Runtime.Il2Cpp;
 using WorldLoader.Attributes;
+using Attributes;
 #if DEBUG
-using Il2CppGen.Runtime.InteropTypes;
-using Il2CppGen.Runtime.InteropTypes.Arrays;
-using Il2CppGen.Runtime;
-using Il2CppGen.Runtime.Runtime;
+using Il2CppInterop.Runtime.InteropTypes;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
+using Il2CppInterop.Runtime;
+using Il2CppInterop.Runtime.Runtime;
 #endif
 #if UNHOLLOWER
 using UnhollowerBaseLib;

@@ -13,8 +13,8 @@ using UnityEngine.EventSystems;
 using HarmonyLib;
 using UniverseLib.Utility;
 #if DEBUG
-using Il2CppGen.Runtime;
-using Il2CppGen.Runtime.InteropTypes.Arrays;
+using Il2CppInterop.Runtime;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
 #else
 using UnhollowerRuntimeLib;
 using UnhollowerBaseLib;

@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 #if DEBUG
 #if DEBUG
-using Il2CppGen.Runtime.InteropTypes.Arrays;
-using Il2CppGen.Runtime;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
+using Il2CppInterop.Runtime;
 #else
 using UnhollowerRuntimeLib;
 using UnhollowerBaseLib;

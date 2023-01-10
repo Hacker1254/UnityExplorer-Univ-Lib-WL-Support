@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 using UniverseLib.UI;
 using UniverseLib.Utility;
 #if DEBUG
-using Il2CppGen.Runtime.InteropTypes.Arrays;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
 #endif
 #if UNHOLLOWER
 using UnhollowerBaseLib;

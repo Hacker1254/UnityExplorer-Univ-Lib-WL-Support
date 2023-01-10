@@ -35,7 +35,7 @@ namespace UniverseLib.Input
             // First, just try to use the legacy input, see if its working.
             // The InputSystem package may be present but not actually activated, so we can find out this way.
 
-            // With BepInEx Il2CppGen, for some reason InputLegacyModule may be loaded but our ReflectionUtility doesn't cache it?
+            // With BepInEx Il2CppInterop, for some reason InputLegacyModule may be loaded but our ReflectionUtility doesn't cache it?
             // No idea why or what is happening but this solves it for now.
             if (ReflectionUtility.GetTypeByName("UnityEngine.Input") == null)
             {

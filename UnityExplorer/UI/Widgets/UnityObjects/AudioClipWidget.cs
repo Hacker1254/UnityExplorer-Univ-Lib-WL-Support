@@ -7,8 +7,8 @@ using UniverseLib.UI.Models;
 using UniverseLib.UI.ObjectPool;
 #if DEBUG
 #if DEBUG
-using Il2CppGen.Runtime;
-using Il2CppGen.Runtime.InteropTypes.Arrays;
+using Il2CppInterop.Runtime;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
 #else
 using UnhollowerRuntimeLib;
 using UnhollowerBaseLib;
